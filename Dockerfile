@@ -7,7 +7,7 @@ RUN apt-get update && \
 
 RUN git clone https://github.com/Red-Eyed/ConfigFiles.git && \
     ./ConfigFiles/install_linux.py --mode=headless && \
-    rm -rf /var/lib/apt/lists/* &&
+    rm -rf /var/lib/apt/lists/* && \
     rm -rf ~/Downloads/*
     
 ENTRYPOINT /usr/bin/zsh
