@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && \
-    apt install git && \
+RUN apt-get update && \
+    apt-get install git && \
     rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/Red-Eyed/ConfigFiles.git && \
