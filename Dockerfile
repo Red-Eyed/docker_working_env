@@ -6,7 +6,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN git clone https://github.com/Red-Eyed/ConfigFiles.git && \
-    ./ConfigFiles/install_linux.py --mode=headless && \
+    ./ConfigFiles/install_linux.py --mode=headless --force_superuser && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf ~/Downloads/*
     
